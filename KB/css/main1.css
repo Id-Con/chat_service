@@ -1,7 +1,5 @@
 * {border: none;}
-.header {
-    border: 1px solid black;
-}
+
 .header  div {
     display: flex;
     align-items: center;
@@ -10,11 +8,9 @@
     justify-content: space-around;
 }
 .section {
-    border: 1px solid black;
     height: 150px;
 }
 .section > div:nth-child(1) {
-    border-right: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,4 +63,18 @@
     color: white;
 }
 
+
+.search_talk_2 > div {
+    display: flex;
+    align-items: center;
+}
+
+.search_talk_2 > div > input {
+    border: 1px solid black;
+    height: 90%;
+    flex-grow: 1;
+}
+.search_talk_2 > div > input[type="button"] {
+    font-size: 0.7rem;
+}
 
