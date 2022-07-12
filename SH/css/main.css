@@ -83,19 +83,21 @@ header {
   display: flex;
   width: 100%;
 }
-.search_input {
+.search_box_form {
   flex-grow: 1;
+  padding: 1rem;
+}
+.search_input {
+  width: 100%;
   font-size: 1.2rem;
   height: 3rem;
   line-height: 2rem;
-  margin: 1rem 1rem 1rem;
 }
 .search_cancel {
   font-size: 1.5rem;
   background-color: white;
   border: none;
   cursor: pointer;
-  /* vertical-align: top; */
 }
 
 /* main */
