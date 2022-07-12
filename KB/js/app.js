@@ -26,5 +26,11 @@ window.addEventListener('keydown', e=> {
 for(let i=0; i<$title.length; i++){
     console.log(`본문 : ${$title[i].innerText}, 시간 : ${$time[i].innerText}`);
 }
+console.log($chatlist.childNodes);
 
-console.log($title[0].innerText)
+
+let datalist = [];
+for(let i=0; i<$chatlist.childNodes.length; i++){
+    chatlist.childNodes[i].value !== undefined ? datalist.push(chatlist.childNodes[i].value) : i
+}
+console.log(datalist)
