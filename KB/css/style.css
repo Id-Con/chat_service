@@ -1,0 +1,31 @@
+/* --reset css-- */
+* {margin: 0; padding: 0; box-sizing: border-box; font-size: 25px; border: 1px solid black;}
+.default_icon {
+    width: 50px;
+    height: 50px;
+}
+
+.search_talk {
+    border-radius: 50%;
+    background: url('https://api.iconify.design/bx/search.svg') no-repeat center center / contain;
+}
+.add_talk {
+    border-radius: 50%;
+    background: url('https://api.iconify.design/akar-icons/plus.svg') no-repeat center center / contain;
+}
+.default_icon {
+    width: 50px;
+    height: 50px;
+}
+.hide_web {
+    border: none;
+    background: url('https://api.iconify.design/clarity/window-min-line.svg') no-repeat center center / contain;
+}
+.change_web {
+    border: none;
+    background: url('https://api.iconify.design/bx/window.svg') no-repeat center center / contain;
+}
+.close_web {
+    border: none;
+    background: url('https://api.iconify.design/gridicons/cross.svg') no-repeat center center / contain;
+}

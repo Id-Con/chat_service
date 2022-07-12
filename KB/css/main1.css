@@ -1,0 +1,70 @@
+* {border: none;}
+.header {
+    border: 1px solid black;
+}
+.header  div {
+    display: flex;
+    align-items: center;
+}
+.header > div:nth-child(2) {
+    justify-content: space-around;
+}
+.section {
+    border: 1px solid black;
+    height: 150px;
+}
+.section > div:nth-child(1) {
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section > div:nth-child(2) > div >p:nth-child(1) {
+    font-weight: 800;
+}
+.section > div:nth-child(2) > div >p:nth-child(2) {
+    font-size: 0.8em;
+    opacity: .7;
+}
+.section > div:nth-child(2) > p {
+    font-size: 0.8em;
+    opacity: .7;
+}
+
+.chatroom_img {
+    border: 1px solid black;
+    width: 80%;
+    height: 60%;
+    border-radius: 15px;
+}
+
+.chatroom_right > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chatroom_right {
+    position: relative;
+}
+.chatroom_right > p {
+    height: 60px;
+    width: 85%;
+}
+
+/*상위 부모요소에 relative*/
+.preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    width: 13%;
+    height: 25%;
+    border-radius: 7px;
+    background-color: red;
+    color: white;
+}
+
+
