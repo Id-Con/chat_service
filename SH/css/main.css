@@ -88,6 +88,7 @@ header {
   padding: 1rem;
 }
 .search_input {
+  padding-left: 1rem;
   width: 100%;
   font-size: 1.2rem;
   height: 3rem;
@@ -137,4 +138,25 @@ main {
   padding-top: 0.5rem;
   color: lightgray;
   font-size: 0.8rem;
+}
+
+/* 검색결과 없을때 */
+.nothing_search {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nothing_search .iconify {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+}
+.nothing_search div {
+  padding: 0.5rem;
+}
+
+.nothing_search > div:nth-child(2) {
+  font-size: 1.5rem;
 }
