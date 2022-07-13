@@ -1,3 +1,11 @@
+fetch('')
+
+
+
+
+
+
+
 let $search_talk = document.querySelector('.search_talk');
 let $search_talk_2 = document.querySelector('.search_talk_2');
 let $search_hidden = document.querySelector('#search_hidden');
@@ -42,5 +50,3 @@ window.addEventListener('keydown', e=> {
         }
     },100)
 })
-
-
