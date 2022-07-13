@@ -33,7 +33,6 @@ const init = () => {
 
 const searchFriends = (event) => {
   event.preventDefault();
-  // console.log($search_input.value);
   $friends_list.innerHTML = `<div class="friends_list_title">친구</div>`;
   friends_lists.forEach((friend) => {
     if (friend.name.includes($search_input.value)) {
@@ -52,7 +51,7 @@ const searchFriends = (event) => {
     </li>`;
     }
   });
-};
+}; //친구 검색 기능
 
 $search_box_form.addEventListener("submit", searchFriends);
 init();
