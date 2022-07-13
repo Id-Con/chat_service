@@ -11,7 +11,9 @@ app.use(express.static(path.join(__dirname, "src"))); // join은 운영체제마
 const PORT = process.env.PORT || 5000;
 
 io.on("connection", (socket) => {
-  console.log("연결이 이루어 졌습니다.");
+  socket.on("chatting", (data) => {
+    io.emit("chatting", data);
+  });
 });
 
-app.listen(PORT, () => console.log(`server is running ${PORT}`));
+server.listen(PORT, () => console.log(`server is running ${PORT}`));
