@@ -33,17 +33,6 @@ a:hover {
   html {
     font-size: 12px;
   }
-
-  /* header */
-  .serach_and_add {
-    justify-content: end;
-  }
-  .serach_and_add::before {
-    display: none;
-  }
-  .exit {
-    display: none;
-  }
 }
 
 /* container */
@@ -60,26 +49,21 @@ header {
   padding: 0 1rem;
   width: 100%;
 }
+
 .title {
-  flex-grow: 0.1;
+  font-size: 2rem;
+  padding-left: 2rem;
+  flex-grow: 1;
 }
 .title span {
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
 }
-.serach_and_add::before {
-  background-color: lightgray;
-  width: 2px;
-  height: 44px;
-  vertical-align: top;
-  content: "";
-}
-.serach_and_add {
-  display: flex;
-  align-items: center;
-  flex-grow: 2;
-}
-.serach {
-  padding: 0 20px;
+.check {
+  font-size: 1.5rem;
+  background-color: white;
+  color: rgb(150, 150, 150);
+  border: none;
+  cursor: pointer;
 }
 
 /* serach버튼 클릭시 */
@@ -98,13 +82,6 @@ header {
   height: 3rem;
   line-height: 2rem;
 }
-.search_cancel {
-  font-size: 1.5rem;
-  background-color: white;
-  border: none;
-  cursor: pointer;
-}
-
 /* main */
 main {
   margin-top: 20px;
@@ -112,36 +89,44 @@ main {
   border-top: 1px solid lightgray;
 }
 
-/* chat */
+/* 친구 목록 */
 .profile-pic {
   border: 2px solid black;
   padding: 5px;
   border-radius: 10px;
 }
-.talk_list li {
-  border-bottom: 1px solid black;
-
+.friends_list {
   padding: 2rem 1rem;
+}
+.friends_list_title {
+  padding-bottom: 1rem;
+  font-size: 1.6rem;
   width: 100%;
 }
-.talk_list li a {
-  /* display: inline-block; */
+.friends_list li a {
   display: flex;
   font-size: 20px;
   width: 100%;
+  align-items: center;
 }
-.chat_info {
+.friends_list li {
+  padding: 0.5rem 0;
+}
+.friend_name {
+  padding-left: 1rem;
   flex-grow: 1;
-  padding-left: 3rem;
 }
-.chat_name {
-  font-weight: 900;
-  font-size: 1.2rem;
+.friend_checkbox {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 2px solid black;
+  appearance: none;
+  cursor: pointer;
 }
-.chat_message {
-  padding-top: 0.5rem;
-  color: lightgray;
-  font-size: 0.8rem;
+.friend_checkbox:checked {
+  background: black;
+  border: none;
 }
 
 /* 검색결과 없을때 */

@@ -120,18 +120,6 @@ const searchSubmit = (event) => {
     }
   }); // 저장된 데이터와 input의 값을 비교해서 input을 포함하고 있는 메세지들을 가져온다.
 
-  // values.forEach((value) => {
-  //   //[배열,배열,배열,배열,배열]
-  //   valuesId.push(value[1].split(""));
-
-  //   // value.forEach((ele) => {
-  //   //   if (ele === $search_input.value) {
-  //   //     console.log(ele);
-  //   //   }
-  //   // });
-  // });
-  // console.log(valuesId);
-
   if ($talk_list.innerHTML === "") {
     showNothing();
   } // 내용에 아무것도 없다면 showNoting() 함수 실행
