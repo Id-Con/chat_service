@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Open+Sans:wght@300&display=swap");
+
+/* reset-css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  /* border: 1px solid black; */
+}
+
+/* init */
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+.iconify {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+.hidden {
+  display: none;
+}
+
+/* media query */
+@media screen and (max-width: 768px) {
+  /* header */
+  .serach_and_add {
+    justify-content: end;
+  }
+  .serach_and_add::before {
+    display: none;
+  }
+  .exit {
+    display: none;
+  }
+}
+
+/* container */
+.container {
+  width: 80%;
+  padding-top: 2rem;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+.title {
+  flex-grow: 0.1;
+}
+.title span {
+  padding: 0 1rem;
+}
+.serach_and_add::before {
+  background-color: lightgray;
+  width: 2px;
+  height: 44px;
+  vertical-align: top;
+  content: "";
+}
+.serach_and_add {
+  display: flex;
+  align-items: center;
+  flex-grow: 2;
+}
+.serach {
+  padding: 0 20px;
+}
+
+/* serach버튼 클릭시 */
+.search_box {
+  display: flex;
+  width: 100%;
+}
+.search_input {
+  flex-grow: 1;
+  font-size: 1.2rem;
+  height: 3rem;
+  line-height: 2rem;
+  margin: 1rem 1rem 1rem;
+}
+.search_cancel {
+  font-size: 1.5rem;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  /* vertical-align: top; */
+}
+
+/* main */
+main {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid lightgray;
+}
+
+/* chat */
+.profile-pic {
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 10px;
+}
+.talk_list li {
+  border-bottom: 1px solid black;
+
+  padding: 2rem 1rem;
+  width: 100%;
+}
+.talk_list li a {
+  /* display: inline-block; */
+  display: flex;
+  font-size: 20px;
+  width: 100%;
+}
+.chat_info {
+  flex-grow: 1;
+  padding-left: 3rem;
+}
+.chat_name {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.chat_message {
+  padding-top: 0.5rem;
+  color: lightgray;
+  font-size: 0.8rem;
+}
